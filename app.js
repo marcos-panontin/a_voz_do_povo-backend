@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const answersRouter = require('./src/routes/answersRouter');
 const questionsRouter = require('./src/routes/questionsRouter');
 
@@ -11,7 +12,11 @@ app.use('/answers', answersRouter);
 app.use('/questions', questionsRouter);
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
+
+// app.get('/', (req, res) => {
+//   res.send('Hello World!');
+// });
 
 module.exports = app;
