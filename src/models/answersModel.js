@@ -26,8 +26,9 @@ const getAnswersByAnswerId = async (answerId) => {
 
   const { count_option_0, count_option_1 } = result;
   return {
-    count_option_0,
-    count_option_1
+    "respostas_opção_0": count_option_0,
+    "respostas_opção_1": count_option_1,
+    "total_respostas": count_option_0 + count_option_1,
   };
 };
 

@@ -11,7 +11,7 @@ A aplicação A Voz do Povo é uma aplicação FullStack que tem como objetivo c
 A API oferece os seguintes endpoints:
 
 - `/answers`: Retorna todas as respostas coletadas.
-- `/answers/:id`: Retorna todas as respostas coletadas para uma pergunta específica, onde `:id` na URL é substituído pelo ID da pergunta desejada.
+- `/answers/:id`: Retorna a contabilização das respostas coletadas para uma pergunta específica, separadas pela opção selecionada. O `:id` na URL édeve ser substituído pelo ID da pergunta desejada.
 
 ## Links Importantes
 
