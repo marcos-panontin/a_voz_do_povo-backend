@@ -15,8 +15,4 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './src/APIDocs/index.html'));
 });
 
-// app.get('/', (req, res) => {
-//   res.send('Hello World!');
-// });
-
 module.exports = app;
