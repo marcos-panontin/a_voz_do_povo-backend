@@ -1,6 +1,7 @@
 const { answers } = require('../models');
 
 const send = async (req, res) => {
+  console.log('entrou na send');
   const { questionId, optionSelected, userId } = req.body;
   await answers.send(questionId, optionSelected, userId);
   return res.status(201).json({ message: `Answer ${optionSelected} sent regarding question ${questionId} by user ${userId}` });

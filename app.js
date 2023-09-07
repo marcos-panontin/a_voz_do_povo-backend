@@ -12,7 +12,7 @@ app.use('/answers', answersRouter);
 app.use('/questions', questionsRouter);
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, './src/APIDocs/index.html'));
 });
 
 // app.get('/', (req, res) => {
