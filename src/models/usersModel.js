@@ -1,6 +1,7 @@
 const connection = require('./connection');
 
 const checkIfUserExists = async (userId) => {
+  console.log('entrou na checkIfUserExists');
   const [user] = await connection.execute(
     'SELECT * FROM users WHERE user_id = ?',
     [userId],
@@ -9,10 +10,19 @@ const checkIfUserExists = async (userId) => {
 };
 
 const create = async (userId) => {
+  console.log('entrou na create');
   await connection.execute(
     'INSERT INTO users (user_id) VALUES (?)',
     [userId],
   );
 };
 
-module.exports = { checkIfUserExists, create }
+const getAll = async () => {
+  const [users] = await connection.execute(
+    'SELECT * FROM users',
+  );
+  return users;
+};
+
+
+module.exports = { checkIfUserExists, create, getAll }
