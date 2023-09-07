@@ -24,6 +24,12 @@ A API oferece os seguintes endpoints:
 1. Faça solicitações HTTP para os endpoints fornecidos para acessar as respostas.
 2. Consulte os resultados das respostas para análises e estatísticas.
 
+## Tecnologias usadas
+
+- Node.js
+- Express
+- MySQL
+
 ## Contribuição
 
 Sinta-se à vontade para contribuir para este projeto. Se você tiver sugestões de melhorias ou encontrar problemas, por favor, abra uma [issue](https://github.com/marcos-panontin/a_voz_do_povo/issues) no repositório do Frontend.
