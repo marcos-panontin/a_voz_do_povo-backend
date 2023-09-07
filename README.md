@@ -12,6 +12,7 @@ A API oferece os seguintes endpoints:
 
 - `/answers`: Retorna todas as respostas coletadas.
 - `/answers/:id`: Retorna a contabilização das respostas coletadas para uma pergunta específica, separadas pela opção selecionada. O `:id` na URL édeve ser substituído pelo ID da pergunta desejada.
+- `/users`: Retorna os ids de todos os usuários que responderam perguntas.
 
 ## Links Importantes
 

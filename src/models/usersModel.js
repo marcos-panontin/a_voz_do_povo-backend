@@ -12,7 +12,7 @@ const checkIfUserExists = async (userId) => {
 const create = async (userId) => {
   console.log('entrou na create');
   await connection.execute(
-    'INSERT INTO users (user_id) VALUES (?)',
+    'INSERT INTO users (user_id, created_at) VALUES (?, NOW())',
     [userId],
   );
 };
